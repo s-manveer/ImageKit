@@ -1,0 +1,33 @@
+# macOS
+.DS_Store
+
+# Xcode build files
+build/
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+# Xcode user-specific settings
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.moved-aside
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/Build/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
