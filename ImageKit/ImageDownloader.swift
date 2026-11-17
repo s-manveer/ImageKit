@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ImageDownloader {
+protocol ImageDownloader: Sendable {
     func download(with url: URL) async throws -> Data
 }
 

@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ImageDataCache {
+protocol ImageDataCache: Sendable {
     func store(data: Data, for url: URL) throws
     func get(for url: URL) throws -> Data?
     func remove(for url: URL) throws

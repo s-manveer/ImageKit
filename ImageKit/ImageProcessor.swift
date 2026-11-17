@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-protocol ImageProcessor {
+protocol ImageProcessor: Sendable {
     func process(_ data: Data) throws -> UIImage
 }
 

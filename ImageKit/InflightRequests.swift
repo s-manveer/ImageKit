@@ -8,7 +8,13 @@
 import Foundation
 import UIKit
 
-struct InflightRequests: Identifiable {
-    let id: UUID = UUID()
+struct InflightRequests {
     var task: Task<UIImage, Error>
+    var consumers: Set<UUID> {
+        didSet {
+            if consumers.isEmpty {
+                task.cancel()
+            }
+        }
+    }
 }
